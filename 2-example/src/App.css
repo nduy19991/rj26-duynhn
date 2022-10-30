@@ -40,6 +40,11 @@
 .main {
   width: 22%;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 30px 30px;
+  background-color: lightgray;
+  border-radius: 10px;
 }
 
 .img {
@@ -49,16 +54,16 @@
   margin-bottom: 30px;
 }
 
-.bg {
+.form {
   width: 60%;
   margin: auto;
 }
 
 .img {
   width: 100%;
+  height: auto;
 }
 
 .head {
-  margin-top: 50px;
   text-align: center;
 }

@@ -31,16 +31,16 @@ function App() {
 
     {
       id: 2,
-      age: 23,
-      name: "Nhất Duy 1",
-      address: "39 Yên Bái",
+      age: 25,
+      name: "Văn Việt",
+      address: "72 Nguyễn Tri Phương",
     },
 
     {
       id: 3,
-      age: 24,
-      name: "Nhất Duy 2",
-      address: "40 Yên Bái",
+      age: 21,
+      name: "Ngọc Hùng",
+      address: "101 Hùng Vương",
     },
   ];
   return (
@@ -57,11 +57,11 @@ function App() {
               <div className="form">
               <img className='img' src={nd} alt=""/>
               </div>
-              <p>{user.age}</p>
-              <p>{user.name}</p>
-              <p>{user.address}</p>
+              <p>No : {user.id}</p>
+              <p>Age : {user.age}</p>
+              <p>Name : {user.name}</p>
+              <p>Address : {user.address}</p>
               <hr></hr>
-              
             </div>
           );
         })}
