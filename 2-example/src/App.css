@@ -40,16 +40,14 @@
 .main {
   width: 22%;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
   padding: 30px 30px;
-  background-color: lightgray;
-  border-radius: 10px;
+  background: linear-gradient( #F08080	 0%, #ffcc6f 100%);
+  border-radius: 20px;
 }
 
 .img {
   border-radius: 50%;
-  height: 250px;  
+  height: 250px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -66,4 +64,10 @@
 
 .head {
   text-align: center;
+}
+
+.all {
+  background: url(./images/Untitled.png);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
