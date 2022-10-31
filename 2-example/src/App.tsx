@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import nd from "./images/nd.png";
+import nd from "./images/user.jpg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { idText } from "typescript";

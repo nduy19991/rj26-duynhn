@@ -47,13 +47,12 @@
 
 .img {
   border-radius: 50%;
-  height: 250px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .form {
-  width: 60%;
+  width: 40%;
   margin: auto;
 }
 
@@ -67,7 +66,7 @@
 }
 
 .all {
-  background: url(./images/Untitled.png);
+  background: url(./images/lufy.png);
   padding-top: 50px;
   padding-bottom: 50px;
 }
