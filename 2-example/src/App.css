@@ -49,13 +49,14 @@
   margin-bottom: 30px;
 }
 
-.bg {
+.form {
   width: 60%;
   margin: auto;
 }
 
 .img {
   width: 100%;
+  height: auto;
 }
 
 .head {
