@@ -1,11 +1,13 @@
 import React from "react";
 import logo from "./logo.svg";
-import nd from "./images/nd.png";
+import nd from "./images/user.jpg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { idText } from "typescript";
+import ItemUserClass from "./features/ItemUserClass";
+import userEvent from "@testing-library/user-event";
 
-//Custom Type
+
 interface IUser {
   id: number;
   age: number;
@@ -14,58 +16,34 @@ interface IUser {
 }
 
 function App() {
-  // const user : IUser = {
-  //   id : 1,
-  //   age : 22,
-  //   name : "Nhất Duy",
-  //   address : "38 Yên Bái",
-  // }
 
   const arr: Array<IUser> = [
     {
       id: 1,
       age: 22,
-      name: "Nhất Duy",
+      name: " Nguyễn Hữu Nhất Duy",
       address: "38 Yên Bái",
     },
 
     {
       id: 2,
-      age: 23,
-      name: "Nhất Duy 1",
-      address: "39 Yên Bái",
+      age: 25,
+      name: "Đỗ Hoàng",
+      address: "72 Nguyễn Tri Phương",
     },
 
     {
       id: 3,
-      age: 24,
-      name: "Nhất Duy 2",
-      address: "40 Yên Bái",
+      age: 21,
+      name: "Đàm Ngọc Hưng",
+      address: "101 Hùng Vương",
     },
   ];
   return (
-    <div>
-      <div className="main">
-        <h1 className="head">My Information</h1>
-        {/* <img className='img' src={nd} alt=""/>
-      <p>Age : {user.age}</p>
-      <p>Name : {user.name}</p>
-      <p>Address : {user.address}</p> */}
-        {arr?.map((user : IUser)=>{
-          return (
-            <div className="bg" key={user.id}>
-              <div className="form">
-              <img className='img' src={nd} alt=""/>
-              </div>
-              <p>{user.age}</p>
-              <p>{user.name}</p>
-              <p>{user.address}</p>
-              <hr></hr>
-              
-            </div>
-          );
-        })}
-      </div>
+    <div className="all">
+      {arr?.map((user : IUser ) => (
+        <ItemUserClass key={user?.id} userProps={user}/>
+      ))}
     </div>
   );
 }
