@@ -1,0 +1,53 @@
+.main {
+    display: inline-block;
+    height: 260px;
+    background-color: azure;
+    box-shadow: 2px 3px 7px gray;
+    width: 350px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.number {
+    text-align: center;
+    color: aqua;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.list {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    background-color: rgba(rgba(122, 56, 56, 0), green, blue, alpha);
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.column {
+    width: 23px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.bg {
+    height: 70px;
+    
+    width: 100%;
+}
+
+.right {
+    background-color: lightgray;
+}
+
+.day {
+    text-align: center;
+    font-size: 12px;
+}

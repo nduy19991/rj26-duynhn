@@ -1,0 +1,25 @@
+.main {
+    display: inline-block;
+    height: 300px;
+    width: 250px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.title {
+    color: white;
+    font-size: 32px;
+    font-weight: 200;
+    padding-left: 30px;
+    margin-top: 100px;
+}
+
+.number {
+    color: white;
+    padding-left: 30px;
+}
+
+.img {
+    width: 40%;
+    height: auto;
+}
