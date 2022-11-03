@@ -9,7 +9,8 @@ import userEvent from "@testing-library/user-event";
 // import ListBarClass from "./homework/session 2/BT1ss02/ListBarClass";
 // import ListBarClass from "./homework/session 2/Bt2ss02/ListBarClass";
 // import ListBarClass from "./homework/session 2/Bt3ss02/ListBarClass";
-import ListBarClass from "./homework/session 2/Bt4ss02/ListBarClass";
+// import ListBarClass from "./homework/session 2/Bt4ss02/ListBarClass";
+import AddNumber from "./homework/session 2/BT5ss02/AddNumber";
 
 // interface IUser {
 //   id: number;
@@ -26,7 +27,8 @@ function App() {
       {/* {arr?.map((user : IUser ) => (
         <ItemUserClass key={user?.id} userProps={user}/>
       ))} */}
-      <ListBarClass />
+      {/* <ListBarClass /> */}
+      <AddNumber/>
     </div>
   );
 }
