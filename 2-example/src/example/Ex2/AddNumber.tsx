@@ -1,8 +1,7 @@
 import * as React from "react";
-import { FaBeer } from 'react-icons/fa';
 import { AiOutlineLike } from 'react-icons/ai';
-import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineDislike } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai';
 import { FaStarHalfAlt } from 'react-icons/fa';
 
 
@@ -52,7 +51,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
           disabled={this.state.color === "Blue"}
           onClick={this.handleOnClickBlule}
         >
-          Blue <FaBeer style={{color: "blue"}}/> <AiOutlineLike/> <AiOutlineDislike/> <AiFillStar/> <FaStarHalfAlt/>
+          Blue <AiOutlineLike style={{color: "blue"}}/> <AiOutlineDislike/> <AiFillStar/> <FaStarHalfAlt/>
         </button>
       </div>
     );
