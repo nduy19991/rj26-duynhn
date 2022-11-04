@@ -5,11 +5,6 @@ import { AiFillStar } from 'react-icons/ai';
 import { FaStarHalfAlt } from 'react-icons/fa';
 
 
-
-
-// import { AiFillStar } from "@react-icons/all-files/fa/FaBeer";
-
-
 interface IAppProps {}
 
 interface IAppState {

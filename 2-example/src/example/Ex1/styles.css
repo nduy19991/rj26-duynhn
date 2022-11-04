@@ -36,5 +36,11 @@
 
 h4 {
     margin-top: 20px;
-    text-align: center;
+    margin: auto;
+}
+
+.vote {
+    margin-top: 20px;
+    margin: auto;
+    color: yellow;
 }

@@ -1,9 +1,9 @@
 import * as React from "react";
 import "./styles.css";
 import { AiFillLike, AiFillDislike } from 'react-icons/ai';
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos } from 'react-icons/md';
 import nd from "../../images/1.png"
+import Rating from "./Rating";
 
 
 interface IAppProps { }
@@ -40,9 +40,12 @@ export default class App extends React.Component<IAppProps, IAppState> {
         <div  className="like">
           <button className="btn" onClick={this.setLike}  > {this.state.like ? <AiFillLike style={{color: "white"}}/> : <AiFillDislike style={{color: "white"}}/>} Like </button>
         </div>
-        
-        <h4>Vote Ratting For Us</h4>
-        
+
+        <h4>Ratting For Us</h4>
+
+        <div className="vote">
+        <Rating />
+        </div>
       </div>
     );
   }
