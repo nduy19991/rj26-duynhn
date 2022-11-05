@@ -25,8 +25,8 @@ class Format extends Component<IProps> {
                 <img className="img" src={this.props.userProps.image} alt="" />
                 <BsPlayFill className="play" />
                 <p className="song">{this.props.userProps.song}</p>
-                <p className="name">{this.props.userProps.singer}</p>
-                <p className="name">{this.props.userProps.time}</p>
+                <p className="singer">{this.props.userProps.singer}</p>
+                <p className="time">{this.props.userProps.time}</p>
                 <AiFillHeart className="tym" />
             </div>
         );

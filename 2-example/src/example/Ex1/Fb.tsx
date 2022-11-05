@@ -1,9 +1,9 @@
 import * as React from "react";
 import "./styles.css";
 import { AiFillLike, AiFillDislike } from 'react-icons/ai';
-import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos } from 'react-icons/md';
 import nd from "../../images/1.png"
 import Rating from "./Rating";
+import Image from "./Image"
 
 
 interface IAppProps { }
@@ -32,9 +32,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
     return (
       <div className="tab">
         <div className="list">
-        <button className="next"><MdOutlineArrowBackIosNew/></button>
-        <img className="img" src={nd} alt="" />
-        <button className="next"><MdOutlineArrowForwardIos/></button>
+        <Image/>
         </div>
 
         <div  className="like">

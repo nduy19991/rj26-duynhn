@@ -3,6 +3,7 @@
     flex-direction: column;
     margin-top: 100px;
     width: 580px;
+    margin-left: 50px;
 }
 
 .list {
@@ -21,14 +22,13 @@
     margin-right: 5px;
 }
 
-.img {
+.d-block {
     width: 500px;
     border-radius: 10px;
 }
 
 .btn{
     margin-top: 5px;
-    margin-left: 40px;
     background-color: #4267b2;
     height: 35px;
     color: white;
@@ -36,11 +36,8 @@
 
 h4 {
     margin-top: 20px;
-    margin: auto;
 }
 
 .vote {
-    margin-top: 20px;
-    margin: auto;
     color: yellow;
 }
