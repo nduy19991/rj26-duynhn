@@ -77,3 +77,53 @@
     color: red;
     margin-left: 100px;
 }
+
+.player {
+    margin-top: 100px;
+    width: 500px;
+    margin-left: 100px;
+}
+
+.dvd {
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.n1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.n2 {
+    color: lightslategray;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.t1 {
+    color: lightslategray;
+    font-weight: 500;
+}
+
+.item {
+    color: lightslategray;
+    width: 500px;
+    margin-left: 72px;
+    margin-top: 100px;
+}
+
+.itemm {
+    width: 50px;
+    height: 30px;
+    margin-right: 25px;
+}

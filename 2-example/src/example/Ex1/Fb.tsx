@@ -3,7 +3,7 @@ import "./styles.css";
 import { AiFillLike, AiFillDislike } from 'react-icons/ai';
 import nd from "../../images/1.png"
 import Rating from "./Rating";
-import Image from "./Image"
+import Caro from "./Caro"
 
 
 interface IAppProps { }
@@ -31,12 +31,12 @@ export default class App extends React.Component<IAppProps, IAppState> {
   public render() {
     return (
       <div className="tab">
-        <div className="list">
-        <Image/>
-        </div>
+        
+        <Caro/>
+        
 
         <div  className="like">
-          <button className="btn" onClick={this.setLike}  > {this.state.like ? <AiFillLike style={{color: "white"}}/> : <AiFillDislike style={{color: "white"}}/>} Like </button>
+          <button className="btn" onClick={this.setLike}  > {this.state.like ? <AiFillLike/> : <AiFillDislike/>} Like </button>
         </div>
 
         <h4>Ratting For Us</h4>
