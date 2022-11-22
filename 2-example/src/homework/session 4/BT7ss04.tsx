@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Bt7() {
+function BT7ss04() {
     const [String, setString] = useState<string>();
     const [result, setResult] = useState<number | string>();
 
@@ -39,4 +39,4 @@ function Bt7() {
     )
 }
 
-export default Bt7
+export default BT7ss04
