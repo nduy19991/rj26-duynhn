@@ -50,7 +50,7 @@ function ReduxUserList() {
                 <td className='text-break'>{user.avatar}</td>
                 <td>
                   <button className="btn-detail">Detail</button>
-                  <button className="btn-delete" onClick={() => handleDelete(user.id)}>Delete</button>
+                  <button className="btn-delete">Delete</button>
                 </td>
 
               </tr>
@@ -65,7 +65,3 @@ function ReduxUserList() {
 }
 
 export default ReduxUserList;
-function handleDelete(id: string) {
-  throw new Error("Function not implemented.");
-}
-

@@ -2,6 +2,7 @@ import React from 'react'
 import garena from '../../../images/garena.png'
 
 function ReduxUserForm() {
+  
   return (
     <div>
       <div className="form">
