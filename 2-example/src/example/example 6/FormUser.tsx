@@ -114,7 +114,7 @@ function FormUser() {
                     placeholder="Enter your Password"
                 /> <br />
                 <button className="btn-submit"
-                    >{isSubmit ? 'Update' : 'Submit'}</button>
+                    >{isSubmit ? 'Update' : 'Login'}</button>
                 <button className="btn-create">Create Account</button>
             </form>
         </div>

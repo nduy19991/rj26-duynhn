@@ -55,7 +55,7 @@ function ListUser() {
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>UserName</th>
+                    <th>Account</th>
                     <th>Password</th>
                     <th colSpan={2}></th>
 
