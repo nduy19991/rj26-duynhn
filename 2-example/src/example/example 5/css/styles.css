@@ -1,0 +1,113 @@
+.nav-item {
+   font-size: 25px;
+   font-weight: 700;
+   margin-right: 30px;
+}
+
+.nav-link {
+   color: black;
+}
+
+.nav-link:hover {
+   box-shadow: 0 4px black;
+}
+
+.navbar {
+   background-color: lightgray;
+   height: 70px;
+}
+
+.btn-detail {
+  border-radius: 8px;
+  background-color: red;
+  margin-right: 20px;
+  color: white;
+  border: none;
+}
+
+.btn-delete {
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+button:hover {
+   color: black;
+}
+
+.table {
+  background-color: black;
+  color: white;
+  width: 450px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(32, 41, 32);
+}
+
+tbody tr:hover {
+  background-color: #333;
+}
+
+.form {
+   width: 350px;
+   margin: auto;
+}
+
+.imgga {
+   width: 350px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.input {
+   width: 260px;
+   margin: auto;
+   margin-bottom: 100px;
+}
+
+.input-item {
+   margin-bottom: 10px;
+   border : none;
+   box-shadow: 0 1px black;
+   width: 100%;
+   outline: none;
+}
+
+.btn-submit {
+   width: 100%;
+   margin-top: 20px;
+   background-color: #e51d25;
+   border: none;
+   height: 45px;
+   color: white;
+}
+
+.btn-create {
+   width: 100%;
+   margin-top: 10px;
+   background-color: #333;
+   border: none;
+   height: 30px;
+   color: white;
+}
+
+.user {
+   width: 200px;
+   margin: auto;
+}
+
+.avt {
+   margin-top: 100px;
+   width: 100%;
+   border-radius: 50%;
+   margin-bottom: 30px;
+}
+
+.text {
+   width: 155px;
+   margin: auto;
+}

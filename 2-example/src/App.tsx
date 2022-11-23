@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ReduxTs from "./example/example 5/ReduxTs";
 // import { idText } from "typescript";
 // import ItemUserClass from "./features/ItemUserClass";
 // import userEvent from "@testing-library/user-event";
@@ -23,8 +24,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import BT7ss04 from "./homework/session 4/BT7ss04";
 // import BT8ss04 from "./homework/session 4/BT8ss04";
 // import ListUser from "./example/example 6/ListUser";
-import FormUser from "./example/example 6/FormUser";
-import ConfigRoure from "./example/example 6/ConfigRoure";
+// import FormUser from "./example/example 6/FormUser";
+// import ConfigRoure from "./example/example 6/ConfigRoure";
 
 
 function App() {
@@ -47,7 +48,8 @@ function App() {
       {/* <BT8ss04/> */}
       {/* <ListUser/> */}
       {/* <FormUser/> */}
-      <ConfigRoure />
+      {/* <ConfigRoure /> */}
+      <ReduxTs/>
     </div>
   );
 }

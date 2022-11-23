@@ -111,7 +111,7 @@ function FormUser() {
                     name="avatar"
                     placeholder="Enter your Password"
                 /> <br />
-                <button className="btn-submit" name='submit'>Submit</button>
+                <button className="btn-submit">Submit</button>
                 <button className="btn-create">Create Account</button>
             </form>
         </div>
