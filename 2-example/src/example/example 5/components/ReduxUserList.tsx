@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getUsersAsync } from "../actions/userAction";
+import { deleteUsersAsync, getUsersAsync } from "../actions/userAction";
 
 interface IState {
   userReducers: IUserReducer;
@@ -28,7 +28,7 @@ function ReduxUserList() {
 
   return (
     <>
-      {/* {loading ? <p>Loadding...</p> : null} */}
+      {loading ? <p>Loadding...</p> : null}
 
       <table className="table">
         <thead>
@@ -49,7 +49,7 @@ function ReduxUserList() {
                 <td>{user.name}</td>
                 <td className='text-break'>{user.avatar}</td>
                 <td>
-                  <button className="btn-detail">Detail</button>
+                  <button className="btn-detail" onClick={() => dispatch(deleteUsersAsync(user.id))}>Detail</button>
                   <button className="btn-delete">Delete</button>
                 </td>
 

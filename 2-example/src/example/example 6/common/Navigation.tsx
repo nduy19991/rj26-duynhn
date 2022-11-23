@@ -7,7 +7,7 @@ function Navigation() {
             <nav className="navbar navbar-expand-sm justify-content-center">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link">Home</a>
+                        <Link to={"/home"} className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link to={"/list"} className="nav-link">User List</Link>

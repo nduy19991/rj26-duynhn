@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import "./styles.css";
 import garena from '../../images/garena.png'
-import { useParams } from 'react-router-dom';
-import { getValue } from '@testing-library/user-event/dist/utils';
-import { stringify } from 'querystring';
+import { Navigate, useParams } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom'
 
 function FormUser() {
     const [userName, setUserName] = useState();
     const [userAvatar, setUserAvatar] = useState();
+    const [isSubmit, setIsSubmit] =useState<boolean>(false)
     let params = useParams();
-
+    let navigate = useNavigate();
     useEffect(() => {
         getUser(params.id)
+        if (params.id) {
+            setIsSubmit(true)
+        }
     }, []);
 
     const getUser = (userId: any) => {
@@ -33,7 +35,7 @@ function FormUser() {
     const handleSubmit = (event: any) => {
         event.preventDefault();
         console.log("submit", userName, userAvatar);
-
+        navigate('/list')
         let data = {
             name: userName,
             avatar: userAvatar,
@@ -43,7 +45,6 @@ function FormUser() {
         } else {
             postUser(data)
         }
-
     };
 
     const updateUser = (data: any, userId: string) => {
@@ -89,6 +90,7 @@ function FormUser() {
                 break;
         }
     };
+    
     return (
         <div className="form">
             <img className="imgga" src={garena} />
@@ -111,7 +113,8 @@ function FormUser() {
                     name="avatar"
                     placeholder="Enter your Password"
                 /> <br />
-                <button className="btn-submit">Submit</button>
+                <button className="btn-submit"
+                    >{isSubmit ? 'Update' : 'Submit'}</button>
                 <button className="btn-create">Create Account</button>
             </form>
         </div>
