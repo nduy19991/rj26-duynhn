@@ -5,7 +5,7 @@ function Navigation() {
     return (
         <div>
             <nav className="navbar navbar-expand-sm justify-content-left">
-            <img className='logo' src={logo}/>
+            <img className='logo'  src={logo}/>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link to={"/home"} className="nav-link" style={{color: "black"}}>Home</Link>

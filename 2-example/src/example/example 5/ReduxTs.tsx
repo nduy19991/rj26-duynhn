@@ -6,6 +6,9 @@ import ReduxUserForm from './components/ReduxUserForm'
 import ReduxUserList from './components/ReduxUserList'
 import store from './store'
 import "../example 5/css/styles.css";
+import Home from './components/HomePage'
+import DetailUser from './components/DetailUser'
+import Footer from './common/Footer'
 
 function ReduxTs() {
   return (
@@ -15,8 +18,11 @@ function ReduxTs() {
           <Navigator />
         </div>
         <Routes>
+          <Route path='/home' element={<Home />} />
           <Route path='/list' element={<ReduxUserList />} />
           <Route path='/form' element={<ReduxUserForm />} />
+          <Route path='/form/:id' element={<ReduxUserForm />} />
+          <Route path='/detail/:id' element={<DetailUser />} />
           <Route
             path='*'
             element={
@@ -26,6 +32,9 @@ function ReduxTs() {
             }
           />
         </Routes>
+        <div>
+          <Footer />
+        </div>
       </BrowserRouter>
     </Provider>
   )

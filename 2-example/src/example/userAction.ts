@@ -5,10 +5,12 @@ interface IAction {
   payload?: any;
 }
 
+//Func Call API
 export const getUsersAsync = (): any => {
   return (dispatch: Dispatch<any>) => {
     dispatch(getUsers_Pendding());
     const URL_USER = "https://634e9e514af5fdff3a62367c.mockapi.io/users";
+
     fetch(URL_USER, {
       method: "GET",
     })
@@ -37,17 +39,16 @@ const getUsers_Error = (data?: object): IAction => ({
   payload: data, // PARAMETER
 });
 
-
 export const deleteUsersAsync = (userId: string | number): any => {
   return (dispatch: Dispatch<any>) => {
     dispatch(deleteUsers_Pendding());
-    const URL_USER = "https://634e9e514af5fdff3a62367c.mockapi.io/users/" + userId;
+    const URL_USER = "https://63284e93a2e90dab7bdd0fd7.mockapi.io/api/v1/users/" + userId;
     fetch(URL_USER, {
       method: "DELETE",
     })
       .then((response) => response.json())
       .then((data) => {
-        dispatch(getUsersAsync());
+        dispatch(deleteUsers_Success(data));
       })
       .catch((error) => {
         dispatch(deleteUsers_Error(error));
@@ -59,13 +60,11 @@ const deleteUsers_Pendding = (data?: object): IAction => ({
   type: "DELETE_PENDDING", // ACTION TYPE
   payload: data, // PARAMETER
 });
-
 const deleteUsers_Success = (data?: object): IAction => ({
   type: "DELETE_SUCCESS", // ACTION TYPE
   payload: data, // PARAMETER
 });
-
 const deleteUsers_Error = (data?: object): IAction => ({
-  type: "DELETE_ERROR", // ACTION TYPE
+  type: "DELETE_SUCCESS", // ACTION TYPE
   payload: data, // PARAMETER
 });
