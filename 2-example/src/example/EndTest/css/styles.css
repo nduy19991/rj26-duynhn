@@ -22,14 +22,12 @@
    direction: row;
 }
 
-.bgnav {
-   width: 1520px;
-}
 
 .btn-logout {
    height: 38px;
    background-color: #e51d25;
    border: 0;
+   margin-left: 650px;
 }
 
 .right {
@@ -56,11 +54,12 @@
 }
 
 .btn-detail {
-  border-radius: 8px;
-  background-color: red;
+  width: 100%;
+  background-color: #e51d25;
   margin-right: 20px;
   color: white;
   border: none;
+  height: 50px;
 }
 
 .btn-delete {
@@ -77,10 +76,16 @@ button:hover {
 .table {
   background-color: black;
   color: white;
-  width: 490px;
+  width: 400px;
   margin: auto;
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+
+.bg-btn-detail{
+   width: 400px;
+   margin: auto;
+   margin-bottom: 100px;
 }
 
 tbody tr:nth-child(odd) {

@@ -29,48 +29,46 @@ function ReduxUserList() {
     dispatch(getUsersAsync());
   }, []);
 
-  const handleDelete = (userId : string | number) =>{
+  const handleDelete = (userId: string | number) => {
     console.log(userId);
     dispatch(deleteUsersAsync(userId));
   }
 
   const navigate = useNavigate();
-  
-  const gotoDetail = (userId: string) => {
-    navigate('/detail/' + userId);
-}
+
+  const getCreate = () => {
+    navigate('/form');
+  }
 
 
   return (
     <>
       {loading ? <p>Loadding...</p> : null}
       <table className="table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th colSpan={2}></th>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th ></th>
 
-                </tr>
-            </thead>
-            <tbody>
-        {users?.map((user) => (
-          <tr key={`user-${user.id}`}>
-          <th scope="row">{user.id}</th>
-          <td>{user.name}</td>
-          <td className='text-break'>{user.avatar}</td>
-          <td>
-          </td>
-          <td>
-              <button className="btn-detail" onClick={() => gotoDetail(user.id)}>Detail</button>
-              <button className="btn-delete" onClick={() => handleDelete(user.id)}>Delete</button>
-          </td>
+          </tr>
+        </thead>
+        <tbody>
+          {users?.map((user) => (
+            <tr key={`user-${user.id}`}>
+              <th scope="row">{user.id}</th>
+              <td>{user.name}</td>
+              <td>
+                <button className="btn-delete" onClick={() => handleDelete(user.id)}>Delete</button>
+              </td>
 
-      </tr>
-        ))}
-      </tbody>
-        </table>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className="bg-btn-detail">
+        <button className="btn-detail" onClick={getCreate}>Create</button>
+      </div>
     </>
   );
 }

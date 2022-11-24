@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReduxTs from "./example/example 5/ReduxTs";
+import ReduxTs from "./example/EndTest/ReduxTs";
 // import { idText } from "typescript";
 // import ItemUserClass from "./features/ItemUserClass";
 // import userEvent from "@testing-library/user-event";
