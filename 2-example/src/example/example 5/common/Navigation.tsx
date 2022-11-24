@@ -5,23 +5,23 @@ import logo from '../../../images/barlogo.png'
 function Navigation() {
     return (
         <div className='bgbar'>
-            <img  className='logo' src={logo}/>
+            <img className='logo' src={logo} />
             <div className='bgnav'>
-            <nav className="navbar navbar-expand-sm justify-content-center">
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link to={"/home"} className="nav-link" style={{color: "black"}}>Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to={"/list"} className="nav-link" style={{color: "black"}}>User List</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to={"/form"} className="nav-link" style={{color: "black"}}>User Form</Link>
-                    </li>
-                </ul>
-            </nav>
+                <nav className="navbar navbar-expand-sm justify-content-center">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link to={"/home"} className="nav-link" style={{ color: "black" }}>Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to={"/list"} className="nav-link" style={{ color: "black" }}>User List</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to={"/form"} className="nav-link" style={{ color: "black" }}>User Form</Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            
+            <Link style={{ marginTop: "27px" }} to={"/"} className=" btn btn-primary btn-logout">Logout</Link>
         </div>
     )
 }

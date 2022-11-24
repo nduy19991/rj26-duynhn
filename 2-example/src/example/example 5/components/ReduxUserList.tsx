@@ -48,8 +48,8 @@ function ReduxUserList() {
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Account</th>
-                    <th>Password</th>
+                    <th>Name</th>
+                    <th>Address</th>
                     <th colSpan={2}></th>
 
                 </tr>

@@ -95,25 +95,25 @@ function ReduxUserForm() {
       <div className="form">
             <img className="imgga" src={garena} />
             <form className="input">
-                <label>Username</label>
+                <label>Name</label>
                 <br />
                 <input className="input-item"
                     type="text"
                     name="name"
                     value={userName ? userName : ""}
                     onChange={handleChange}
-                    placeholder="Enter your Username"
+                    placeholder="Enter your Name"
                 /> <br />
-                <label>Password</label>
+                <label>Address</label>
                 <br />
                 <input className="input-item"
                     type="text"
                     onChange={handleChange}
                     value={userAvatar ? userAvatar : ""}
                     name="avatar"
-                    placeholder="Enter your Password"
+                    placeholder="Enter your Address"
                 /> <br />
-                <button className="btn-submit" onClick={handleSubmit}>{isSubmit ? 'Update' : 'Login'}</button>
+                <button className="btn-submit" onClick={handleSubmit}>{isSubmit ? 'Update' : 'Submit'}</button>
                 <button className="btn-create">Create Account</button>
             </form>
         </div>

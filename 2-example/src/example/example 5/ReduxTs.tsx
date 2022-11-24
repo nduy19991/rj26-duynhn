@@ -9,6 +9,7 @@ import "../example 5/css/styles.css";
 import Home from './components/HomePage'
 import DetailUser from './components/DetailUser'
 import Footer from './common/Footer'
+import Login from './components/Login'
 
 function ReduxTs() {
   return (
@@ -23,14 +24,7 @@ function ReduxTs() {
           <Route path='/form' element={<ReduxUserForm />} />
           <Route path='/form/:id' element={<ReduxUserForm />} />
           <Route path='/detail/:id' element={<DetailUser />} />
-          <Route
-            path='*'
-            element={
-              <main style={{ padding: '1rem' }}>
-                <p>404 Page not found 😂😂😂</p>
-              </main>
-            }
-          />
+          <Route path='*' element={<Login />} />
         </Routes>
         <div>
           <Footer />
