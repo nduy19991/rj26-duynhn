@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import tc from '../../../images/tc.png'
 import lq from '../../../images/lq.png'

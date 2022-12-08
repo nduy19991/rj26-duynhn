@@ -1,13 +1,14 @@
 .nav-item {
    font-size: 25px;
    font-weight: 700;
-   margin-right: 30px;
+   padding: 20px;
 }
 
 .logo {
+   width: 125px;
    height: 35px;
    margin-top: 15px;
-   margin-left: 10px;
+   padding-left: 10px;
 }
 
 .nav-link:hover {
@@ -22,12 +23,11 @@
    direction: row;
 }
 
-.bgnav {
-   width: 1520px;
-}
-
 .btn-logout {
+   margin-top: 15px;
+   margin-left: 38px;
    height: 38px;
+   width: 72px;
    background-color: #e51d25;
    border: 0;
 }

@@ -3,10 +3,10 @@ import garena from '../../../images/garena.png'
 import { Navigate, useParams } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom'
 
-function FormUser() {
+function Login() {
     const [userName, setUserName] = useState();
     const [userAvatar, setUserAvatar] = useState();
-    let navigate = useNavigate(); 
+    let navigate = useNavigate()
 
     const handleSubmit = (event: any) => {
         event.preventDefault();
@@ -63,4 +63,4 @@ function FormUser() {
     );
 }
 
-export default FormUser;
+export default Login;

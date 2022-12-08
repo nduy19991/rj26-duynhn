@@ -42,7 +42,7 @@ function ReduxUserList() {
 
 
   return (
-    <>
+    <div style={{width:"100%"}}>
       {loading ? <p>Loadding...</p> : null}
       <table className="table">
             <thead>
@@ -71,7 +71,7 @@ function ReduxUserList() {
         ))}
       </tbody>
         </table>
-    </>
+    </div>
   );
 }
 
