@@ -11,9 +11,6 @@ function ReduxUserForm() {
   let navigate = useNavigate();
   useEffect(() => {
       getUser(params.id)
-      if (params.id) {
-          setIsSubmit(true)
-      }
   }, []);
 
   const getUser = (userId: any) => {
@@ -25,7 +22,6 @@ function ReduxUserForm() {
           .then((data) => {
               setUserName(data?.name);
               setUserAvatar(data?.avatar);
-              
           })
           .catch((error) => {
               console.error("Error:", error);
@@ -44,6 +40,7 @@ function ReduxUserForm() {
           updateUser(data, params.id)
       } else {
           postUser(data)
+          alert('Submit Successfuly!!!')
       }
   };
 
@@ -58,8 +55,8 @@ function ReduxUserForm() {
           body: JSON.stringify(data),
       })
           .then((res) => res.json())
-          .then((data) => getUser(data))
-          .catch((error) => console.log(error));
+          .then((data) => alert('Submit Successfuly!!!'))
+          .catch((error) => alert('Submit Fail!!!'));
   };
 
   const postUser = (data: any) => {
@@ -104,17 +101,7 @@ function ReduxUserForm() {
                     onChange={handleChange}
                     placeholder="Enter your Name"
                 /> <br />
-                <label>Address</label>
-                <br />
-                <input className="input-item"
-                    type="text"
-                    onChange={handleChange}
-                    value={userAvatar ? userAvatar : ""}
-                    name="avatar"
-                    placeholder="Enter your Address"
-                /> <br />
-                <button className="btn-submit" onClick={handleSubmit}>{isSubmit ? 'Update' : 'Submit'}</button>
-                <button className="btn-create">Create Account</button>
+                <button className="btn-submit" onClick={handleSubmit}>Create</button>
             </form>
         </div>
     </div>

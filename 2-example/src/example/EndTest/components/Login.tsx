@@ -11,10 +11,10 @@ function Login() {
     const handleSubmit = (event: any) => {
         event.preventDefault();
         console.log("submit", userName, userAvatar);
-        let a : any = 'aptech' 
-        let b : any = 'aptech1' 
+        let a : any = 'admin' 
+        let b : any = 'admin' 
         if (userName===a && userAvatar===b) {
-            navigate('/home')
+            navigate('/list')
         }else { alert('Wrong Password!!!');
         }
     };
