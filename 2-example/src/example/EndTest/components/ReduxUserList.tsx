@@ -62,22 +62,11 @@ function ReduxUserList() {
                 <button className="btn-delete" onClick={() => handleDelete(user.id)}>Delete</button>
               </td>
 
-<<<<<<< HEAD
       </tr>
         ))}
       </tbody>
         </table>
     </div>
-=======
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="bg-btn-detail">
-        <button className="btn-detail" onClick={getCreate}>Create</button>
-      </div>
-    </>
->>>>>>> 3db5acba390aaa0d4e3300e222edeaf730a3f05c
   );
 }
 

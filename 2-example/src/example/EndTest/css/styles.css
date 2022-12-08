@@ -23,10 +23,6 @@
    direction: row;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3db5acba390aaa0d4e3300e222edeaf730a3f05c
 .btn-logout {
    margin-top: 15px;
    margin-left: 38px;
@@ -34,7 +30,6 @@
    width: 72px;
    background-color: #e51d25;
    border: 0;
-   margin-left: 650px;
 }
 
 .right {

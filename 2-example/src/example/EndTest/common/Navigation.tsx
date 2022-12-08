@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import React from 'react'
 import { Link, } from 'react-router-dom'
-=======
-import React, { } from 'react'
-import { Link } from 'react-router-dom'
->>>>>>> 3db5acba390aaa0d4e3300e222edeaf730a3f05c
 import logo from '../../../images/barlogo.png'
 
 function Navigation() {
