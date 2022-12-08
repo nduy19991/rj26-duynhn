@@ -6,7 +6,7 @@ import ReduxUserForm from './components/ReduxUserForm'
 import ReduxUserList from './components/ReduxUserList'
 import store from './store'
 import "../EndTest/css/styles.css";
-import Home from './components/HomePage'
+import Home from './components/Home'
 import Footer from './common/Footer'
 import Login from './components/Login'
 
